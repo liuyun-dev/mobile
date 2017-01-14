@@ -30,19 +30,83 @@ img{
     border-radius:@b;
 }
 //设置常用变量结束
+body{
+    .bg(#F7F7F7);
+}
 //search样式
 .search-box{
     width:@w;
     height:43px;
     padding:6px;
-    border-bottom:2px solid #DDDDDD;
-    .bg(#F7F7F7);
+    border-bottom:1px solid #DDDDDD;
     input{
         width:@w;
         height:@w;
-        border:2px solid #E8E8E8;
+        border:1px solid #E8E8E8;
         padding-left:11px;
         font-family:Helvetica,"微软雅黑";
         .border-radius(5px);
     }
 }
+
+//search样式结束
+//banner开始
+.banner-box{
+    width:@w;
+    height:176px;
+    border:none;
+    .swiper-container {
+        width:@w;
+        height:@w;
+        .swiper-wrapper{
+            .swiper-slide{
+                width:@w;
+                height:@w;
+                a{
+                    display:block;
+                    width:@w;
+                    height:@w;
+                }
+            }
+        }
+    }
+}
+//banner结束
+//nav导航开始
+.nav-box{
+    width:@w;
+    height:108px;
+    padding:18px 0;
+    border-bottom:1px solid #EAEAEA;
+    .bg(#fff);
+    a{
+        display:block;
+        width:25%;
+        height:@w;
+        float:left;
+        text-align:center;
+        img{
+            width:60%;
+        }
+        span{
+            display: block;
+            font-size:13px;
+            color:#666;
+        }
+    }
+}
+//nav导航结束
+
+//news start
+.news-box{
+    width:@w;
+    height:40px;
+    .bg(#fff);
+    padding:12px 15px;
+    span{
+        img{
+            width:20%;
+        }
+    }
+}
+//news end

@@ -5,10 +5,82 @@
     <title>360商城</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
+<!--顶部搜索栏-->
     <header class="search-box">
         <input type="text" class="search" placeholder="搜索商品">
     </header>
+<!--顶部搜索栏结束-->
+<!--轮播图-->
+    <section class="banner-box">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner-img">
+                    <a href="" style="background:url(imgs/banner5.jpg)no-repeat center center/cover"></a>
+                </div>
+                <div class="swiper-slide banner-img">
+                    <a href="" style="background:url(imgs/banner2.webp)no-repeat center center/cover"></a>
+                </div>
+                <div class="swiper-slide banner-img">
+                    <a href="" style="background:url(imgs/banner3.webp)no-repeat center center/cover"></a>
+                </div>
+                <div class="swiper-slide banner-img">
+                    <a href="" style="background:url(imgs/banner4.webp)no-repeat center center/cover"></a>
+                </div>
+                <div class="swiper-slide banner-img">
+                    <a href="" style="background:url(imgs/banner1.webp)no-repeat center center/cover"></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+<!--轮播图结束-->
+<!--nav-->
+    <nav class="nav-box">
+        <a href="">
+            <img src="imgs/nav-1.png" alt="">
+            <span>360手机</span>
+        </a>
+        <a href="">
+            <img src="imgs/nav-2.png" alt="">
+            <span>智品牌</span>
+        </a>
+        <a href="">
+            <img src="imgs/nav-3.png" alt="">
+            <span>一元夺宝</span>
+        </a>
+        <a href="">
+            <img src="imgs/nav-4.png" alt="">
+            <span>社区</span>
+        </a>
+    </nav>
+<!--nav结束-->
+<!--news-->
+    <div class="news-box">
+        <span>
+            <img src="imgs/Z.jpg" alt="">
+        </span>
+        <div class="news">
+            <div class="news-show">
+                <a href="" class="news-list"></a>
+            </div>
+        </div>
+    </div>
+<!--new结束-->
+    <!-- Swiper JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            loop:true,
+            autoplay:3000,
+            pagination: '.swiper-pagination'
+        });
+    </script>
 </body>
 </html>
