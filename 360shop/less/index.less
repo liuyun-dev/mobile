@@ -1,0 +1,48 @@
+//初始化页面
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    list-style:none;
+    background:transparent;
+    font-family:Helvetica,"微软雅黑";
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+*{
+    box-sizing:border-box;
+}
+//设置常用变量
+@w:100%;
+.bg(@r){
+    background:@r;
+}
+.border-radius(@b){
+    border-radius:@b;
+}
+//设置常用变量结束
+//search样式
+.search-box{
+    width:@w;
+    height:43px;
+    padding:6px;
+    border-bottom:2px solid #DDDDDD;
+    .bg(#F7F7F7);
+    input{
+        width:@w;
+        height:@w;
+        border:2px solid #E8E8E8;
+        padding-left:11px;
+        font-family:Helvetica,"微软雅黑";
+        .border-radius(5px);
+    }
+}
