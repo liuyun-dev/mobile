@@ -161,6 +161,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-top: 2px;
   overflow: hidden;
 }
 .news-box .news .news-show a {
