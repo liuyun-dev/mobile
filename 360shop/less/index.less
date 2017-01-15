@@ -220,14 +220,7 @@ body{
 //product start
 .product-stra{
     width:@w;
-    height:400px;
-    .product-title{
-        height:35px;
-        line-height:35px;
-        text-align:center;
-        font-size:13px;
-        color:#666;
-    }
+    height:auto;
     .product-row{
         width:@w;
         height:268px;
@@ -240,6 +233,9 @@ body{
             border-bottom:1px solid #F1F1F1;
             border-right:1px solid #F1F1F1;
             padding-top:15px;
+            a{
+                color: #222;
+            }
         }
         .star-2{
             width:50%;
@@ -247,17 +243,20 @@ body{
             float:left;
             border-bottom:1px solid #F1F1F1;
             padding-top:15px;
+            a{
+                color: #222;
+            }
         }
         .star-title{
             border:1px solid #E1E1E1;
             font-size:12px;
             text-align:center;
             .border-radius(30px);
-            padding:6px 6px;
+            padding:3px 6px;
             vertical-align:middle;
             display:inline-block;
             .logo{
-                width:11%;
+                width: 1.5rem;
                 margin-top:-2px;
             }
             em{
@@ -282,4 +281,19 @@ body{
         }
     }
 }
+.product-title{
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    font-size:13px;
+    color:#666;
+}
 //product end
+
+//newProduct start
+    .newProduct-box{
+        width:@w;
+        height:auto;
+
+    }
+//newProduct end
