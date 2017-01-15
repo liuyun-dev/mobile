@@ -429,14 +429,11 @@ body {
   font-size: 10px;
 }
 .accessories-box .accessories-con ul li span .mark {
-  height: 16px;
   color: #fff;
   background: #FF6666;
   font-size: 8px;
   float: right;
-  margin-right: 11px;
   text-align: center;
-  line-height: 16px;
 }
 .accessories-box .accessories-con ul .accessories-left {
   border-right: 1px solid #EAEAEA;
