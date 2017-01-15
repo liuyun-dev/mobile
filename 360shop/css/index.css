@@ -218,6 +218,7 @@ body {
 .buying-box .timeLimit-box {
   width: 100%;
   height: 162px;
+  overflow: hidden;
 }
 .buying-box .timeLimit-box .swiper-wrapper {
   width: 100%;
@@ -471,7 +472,7 @@ body {
   float: left;
 }
 .footer-box .foot-top .content i {
-  width: 30%;
+  width: 28%;
   display: inline-block;
   line-height: 33px;
   border-radius: 50%;
@@ -498,4 +499,52 @@ body {
 .footer-box .foot-bottom a {
   color: #999;
   font-size: 10px;
+}
+.footer-box .foot-bottom .copyright {
+  margin-top: 5px;
+}
+.shoping {
+  width: 100%;
+  height: 54px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #D1D1D1;
+}
+.shoping ul {
+  width: 100%;
+  height: 54px;
+}
+.shoping ul li {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.shoping ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #555555;
+}
+.shoping ul li a i {
+  display: block;
+  width: 65%;
+  height: 65%;
+  background: url(../imgs/sy.png) no-repeat center center / cover;
+  margin: 0 auto;
+}
+.shoping ul li a span {
+  display: block;
+  font-size: 10px;
+}
+.shoping ul li a .fenlei {
+  background: url(../imgs/more.png) no-repeat center center / cover;
+}
+.shoping ul li a .shop {
+  background: url(../imgs/shop.png) no-repeat center center / cover;
+}
+.shoping ul li a .user {
+  background: url(../imgs/user.png) no-repeat center center / cover;
 }

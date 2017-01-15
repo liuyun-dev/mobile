@@ -181,6 +181,7 @@ body{
     .timeLimit-box{
         width:@w;
         height:162px;
+        overflow:hidden;
         .swiper-wrapper{
             width:@w;
             height:100%;
@@ -447,7 +448,7 @@ body{
             text-align:center;
             float:left;
             i{
-                width:30%;
+                width:28%;
                 display: inline-block;
                 line-height:33px;
                 .border-radius(50%);
@@ -476,6 +477,56 @@ body{
             color:#999;
             font-size:10px;
         }
+        .copyright{
+            margin-top:5px;
+        }
     }
 }
 //页脚结束
+
+//购物车
+.shoping{
+    width:@w;
+    height:54px;
+    .bg(#fff);
+    position:fixed;
+    bottom:0;
+    left:0;
+    border-top:1px solid #D1D1D1;
+    ul{
+        width:@w;
+        height:54px;
+        li{
+            width:25%;
+            height:100%;
+            float:left;
+           a{
+               display:block;
+               width:@w;
+               height:@w;
+               text-align:center;
+               color:#555555;
+               i{
+                   display:block;
+                   width:65%;
+                   height:65%;
+                   background:url(../imgs/sy.png)no-repeat center center/cover;
+                   margin:0 auto;
+               }
+               span{
+                   display:block;
+                   font-size:10px;
+               }
+               .fenlei{
+                   background:url(../imgs/more.png)no-repeat center center/cover;
+               }
+               .shop{
+                   background:url(../imgs/shop.png)no-repeat center center/cover;
+               }
+               .user{
+                   background:url(../imgs/user.png)no-repeat center center/cover;
+               }
+           }
+        }
+    }
+}
