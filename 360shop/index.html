@@ -79,8 +79,126 @@
     </div>
 <!--new结束-->
 <!--抢购 start-->
-
+    <section class="buying-box">
+        <div class="buyTime-box">
+            <span>掌上抢</span>
+            <div class="times">
+                距结束
+                <i>00</i>:
+                <i>00</i>:
+                <i>00</i>
+            </div>
+            <a href="">惊爆特价限时抢&gt;</a>
+        </div>
+        <!-- Swiper -->
+        <div class="timeLimit-box">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy1.jpg" alt="">
+                        <span class="buying-title">纽曼（Newmine）S106 耳挂式无线蓝牙耳机（黑色</span>
+                        <span class="buying-price">
+                            ￥99
+                            <i class="originla-price">￥158</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy2.jpg" alt="">
+                        <span class="buying-title">ORICO S1智能便携迷你移动电源（玫瑰金）</span>
+                        <span class="buying-price">
+                            ￥59
+                            <i class="originla-price">￥99</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy3.jpg" alt="">
+                        <span class="buying-title">广艺顺太阳能充电宝移动电源20000毫安 绿色</span>
+                        <span class="buying-price">
+                            ￥79
+                            <i class="originla-price">￥98</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy4.jpg" alt="">
+                        <span class="buying-title">砖投P96智能微型投影仪</span>
+                        <span class="buying-price">
+                            ￥1488
+                            <i class="originla-price">￥1688</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy5.jpg" alt="">
+                        <span class="buying-title">DM Aiplay苹果手机U盘APD001 64G白色</span>
+                        <span class="buying-price">
+                            ￥199
+                            <i class="originla-price">￥269</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy6.jpg" alt="">
+                        <span class="buying-title">DM Aiplay苹果手机U盘APD001 64G白色</span>
+                        <span class="buying-price">
+                            ￥199
+                            <i class="originla-price">￥269</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy7.jpg" alt="">
+                        <span class="buying-title">DM Aiplay苹果手机U盘APD001 64G白色</span>
+                        <span class="buying-price">
+                            ￥199
+                            <i class="originla-price">￥269</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="buyingList">
+                        <img src="imgs/buy8.png" alt="">
+                        <span class="buying-title">DM Aiplay苹果手机U盘APD001 64G白色</span>
+                        <span class="buying-price">
+                            ￥199
+                            <i class="originla-price">￥269</i>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide"></div>
+            </div>
+        </div>
+    </section>
 <!--抢购 end-->
+<!--product start-->
+    <section class="product-stra">
+        <h2 class="product-title">
+            <b>一</b>明星单品<b>一</b>
+        </h2>
+        <ul class="product-row">
+            <li class="star-1">
+                <span class="star-title">
+                    <img src="imgs/title.png" alt="">
+                    <em>5000mAh大电池</em>
+                </span>
+                <img src="imgs/p1.png" alt="">
+            </li>
+            <li class="star-2">
+
+            </li>
+        </ul>
+    </section>
+<!--product end-->
+
+
     <!-- Swiper JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -91,6 +209,12 @@
             loop:true,
             autoplay:3000,
             pagination: '.swiper-pagination'
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.timeLimit-box', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3
         });
     </script>
 </body>

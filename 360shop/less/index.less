@@ -9,6 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     list-style:none;
     background:transparent;
     font-family:Helvetica,"微软雅黑";
+    font-style:normal;
 }
 
 a{
@@ -142,3 +143,126 @@ body{
     }
 }
 //news end
+//buying strat
+.buying-box{
+    width:@w;
+    height:201px;
+    border-bottom:1px solid #EAEAEA;
+    .bg(#fff);
+    margin-top:10px;
+    .buyTime-box{
+        width:@w;
+        height:39px;
+        padding:0 10px;
+        border-bottom:1px solid #EAEAEA;
+        line-height:39px;
+        font-size:14px;
+        span{
+            display:inline-block;
+            color:#FF5555;
+            float:left;
+        }
+        .times{
+            float:left;
+            font-size:13px;
+            margin-left:13px;
+            i{
+                padding:1px 3px;
+                margin-right:3px;
+                border:1px solid #AAAAAA;
+            }
+        }
+        a{
+            color:#222;
+            display:inline-block;
+            float:right;
+        }
+    }
+    .timeLimit-box{
+        width:@w;
+        height:162px;
+        .swiper-wrapper{
+            width:@w;
+            height:100%;
+            padding:10px 0;
+            div{
+                height:100%;
+                padding:0 5px;
+                border-right:1px solid #F1F1F1;
+                text-align:center;
+                img{
+                    width:100%;
+                }
+                .buying-title{
+                    display:block;
+                    height:14px;
+                    font-size:12px;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    color:#555;
+                }
+                .buying-price{
+                    font-size:12px;
+                    color:#FF5555;
+                    .originla-price{
+                        font-size:10px;
+                        text-decoration:line-through;
+                        color:#AAAAAA;
+                    }
+                }
+            }
+        }
+    }
+}
+//buying end
+//product start
+.product-stra{
+    width:@w;
+    height:400px;
+    .product-title{
+        height:35px;
+        line-height:35px;
+        text-align:center;
+        font-size:13px;
+        color:#666;
+    }
+    .product-row{
+        width:@w;
+        height:268px;
+        background:#fff;
+        text-align:center;
+        .star-1{
+            width:50%;
+            height:100%;
+            float:left;
+            border-bottom:1px solid #F1F1F1;
+            border-right:1px solid #F1F1F1;
+            padding-top:15px;
+        }
+        .star-2{
+            width:50%;
+            height:100%;
+            float:left;
+            border-bottom:1px solid #F1F1F1;
+            padding-top:15px;
+        }
+        .star-title{
+
+            border:1px solid #E1E1E1;
+            font-size:12px;
+            text-align:center;
+            .border-radius(30px);
+            padding:6px 6px;
+            vertical-align:middle;
+            img{
+                width:11%;
+                margin-top:-2px;
+            }
+            em{
+                margin-left:5px;
+            }
+        }
+    }
+}
+//product end
