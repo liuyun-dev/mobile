@@ -1,0 +1,135 @@
+//初始化页面
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    list-style:none;
+    background:transparent;
+    font-family:Helvetica,"微软雅黑";
+    font-style:normal;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+*{
+    box-sizing:border-box;
+}
+//设置常用变量
+@w:100%;
+.bg(@r){
+    background:@r;
+}
+.border-radius(@b){
+    border-radius:@b;
+}
+
+
+
+.herd-box{
+    width:@w;
+    height:44px;
+    border-bottom:#1F1F1F;
+    line-height:44px;
+    .bg(#454545);
+    color:#fff;
+    text-align:center;
+    span{
+        margin-left:15%;
+    }
+    button{
+        float:right;
+        margin:7px 10px;
+        color: #ffffff;
+        .bg(#454545);
+        border:1px solid #393939;
+        width:15%;
+        height:30px;
+    }
+}
+
+.main{
+    width:@w;
+    height:620px;
+    .bg(#F1F1F1);
+    ul{
+        width:@w;
+        height:auto;
+        li{
+            width:@w;
+            height:65px;
+            border-bottom:1px solid #E0E0E0;
+            padding:10px 0;
+            img{
+                float:left;
+            }
+            .title-box{
+                float: left;
+                margin-left:10px;
+                .title{
+                    display: block;
+                    color: #000;
+                }
+                .list{
+                    font-size:12px;
+                    color:#A1ABAD;
+                }
+            }
+        }
+    }
+}
+
+
+.shoping{
+    width:@w;
+    height:54px;
+    .bg(#fff);
+    position:fixed;
+    bottom:0;
+    left:0;
+    border-top:1px solid #D1D1D1;
+    z-index:9999;
+    ul{
+        width:@w;
+        height:54px;
+        li{
+            width:25%;
+            height:100%;
+            float:left;
+            a{
+                display:block;
+                width:@w;
+                height:@w;
+                text-align:center;
+                color:#555555;
+                i{
+                    display:block;
+                    width:65%;
+                    height:65%;
+                    background:url(../imgs/sy.png)no-repeat center center/cover;
+                    margin:0 auto;
+                }
+                span{
+                    display:block;
+                    font-size:10px;
+                }
+                .fenlei{
+                    background:url(../imgs/more.png)no-repeat center center/cover;
+                }
+                .shop{
+                    background:url(../imgs/shop.png)no-repeat center center/cover;
+                }
+                .user{
+                    background:url(../imgs/user.png)no-repeat center center/cover;
+                }
+            }
+        }
+    }
+}

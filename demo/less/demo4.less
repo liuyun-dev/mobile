@@ -1,0 +1,88 @@
+//初始化页面
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    list-style:none;
+    background:transparent;
+    font-family:Helvetica,"微软雅黑";
+    font-style:normal;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+*{
+    box-sizing:border-box;
+}
+//设置常用变量
+@w:100%;
+.bg(@r){
+    background:@r;
+}
+.border-radius(@b){
+    border-radius:@b;
+}
+header{
+    width:@w;
+    height:40px;
+    text-align: center;
+    line-height:40px;
+    background:#eeeeee;
+}
+.tabs{
+    width:@w;
+    height:40px;
+    .bg(#F7F7F7);
+    text-align:center;
+    line-height:40px;
+    overflow: hidden;
+    a{
+        display: block;
+        width:33.33333%;
+        height:@w;
+        float: left;
+        color:#ccc;
+    }
+    a.active{
+        color:#000;
+        border-bottom:2px solid #007aff;
+    }
+}
+.main{
+    width:@w;
+    height:620px;
+    .bg(#F1F1F1);
+    ul{
+        width:@w;
+        height:auto;
+        li{
+            width:@w;
+            height:65px;
+            border-bottom:1px solid #E0E0E0;
+            padding:10px 0;
+            img{
+                float:left;
+            }
+            .title-box{
+                float: left;
+                margin-left:10px;
+                .title{
+                    display: block;
+                    color: #000;
+                }
+                .list{
+                    font-size:12px;
+                    color:#A1ABAD;
+                }
+            }
+        }
+    }
+}
