@@ -397,7 +397,7 @@ body {
   height: 176px;
 }
 .accessories-box .accessories-img a img {
-  height: 176px;
+  width: 100%;
 }
 .accessories-box .accessories-con {
   width: 100%;
