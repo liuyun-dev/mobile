@@ -14,6 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 a{
     text-decoration: none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 img{
     border: 0;
@@ -49,12 +50,16 @@ body{
         .border-radius(5px);
     }
 }
-
+.cl:before,.cl:after{
+    content:"";
+    display:block;
+    clear:both;
+}
 //search样式结束
 //banner开始
 .banner-box{
     width:@w;
-    height:176px;
+    height:auto;
     border:none;
     .swiper-container {
         width:@w;
@@ -62,11 +67,12 @@ body{
         .swiper-wrapper{
             .swiper-slide{
                 width:@w;
-                height:@w;
                 a{
                     display:block;
                     width:@w;
-                    height:@w;
+                    img{
+                        width:@w;
+                    }
                 }
             }
         }
@@ -76,9 +82,10 @@ body{
 //nav导航开始
 .nav-box{
     width:@w;
-    height:108px;
+    height:auto;
     padding:18px 0;
     border-bottom:1px solid #EAEAEA;
+    overflow:hidden;
     .bg(#fff);
     a{
         display:block;
@@ -101,7 +108,7 @@ body{
 //news start
 .news-box{
     width:@w;
-    height:40px;
+    height:auto;
     .bg(#fff);
     padding:12px 15px;
     span{
@@ -116,11 +123,11 @@ body{
     }
     .news{
         width:80%;
-        height:100%;
+        height:20px;
         float:left;
        .news-show{
            width:@w;
-           height:@w;
+           height:100%;
            position:relative;
            margin-top:2px;
            overflow:hidden;
@@ -146,7 +153,7 @@ body{
 //buying strat
 .buying-box{
     width:@w;
-    height:211px;
+    height:auto;
     border-bottom:1px solid #EAEAEA;
     .bg(#fff);
     margin-top:10px;
@@ -180,14 +187,14 @@ body{
     }
     .timeLimit-box{
         width:@w;
-        height:172px;
+        height:auto;
         overflow:hidden;
         padding:10px 0;
         .swiper-wrapper{
             width:@w;
-            height:100%;
+            height:auto;
             div{
-                height:100%;
+                height:auto;
                 padding:0 5px;
                 border-right:1px solid #F1F1F1;
                 text-align:center;
@@ -226,12 +233,13 @@ body{
     height:auto;
     .product-row{
         width:@w;
-        height:268px;
+        height:auto;
         background:#fff;
         text-align:center;
+        overflow:hidden;
         .star-1{
             width:50%;
-            height:100%;
+            height:auto;
             float:left;
             border-bottom:1px solid #F1F1F1;
             border-right:1px solid #F1F1F1;
@@ -242,7 +250,7 @@ body{
         }
         .star-2{
             width:50%;
-            height:100%;
+            height:auto;
             float:left;
             border-bottom:1px solid #F1F1F1;
             padding-top:15px;
@@ -285,7 +293,7 @@ body{
     }
 }
 .product-title{
-    height:35px;
+    height:auto;
     line-height:35px;
     text-align:center;
     font-size:13px;
@@ -300,13 +308,15 @@ body{
         .newProduct{
             width:@w;
             height:auto;
+            overflow:hidden;
             li{
                 width:@w;
                 height:auto;
+                overflow:hidden;
                 a{
                     width:@w;
                     display:block;
-                    height:282px;
+                    height:auto;
                     margin-bottom:10px;
                     .bg(#fff);
                     position:relative;
@@ -318,7 +328,6 @@ body{
                         position:absolute;
                         bottom:87px;
                         right:0;
-                        height:27px;
                         width:15%;
                         background:rgba(0,0,0,.5);
                         text-align:center;
@@ -361,11 +370,11 @@ body{
         height:auto;
         .accessories-img{
             width:@w;
-            height:176px;
+            height:auto;
             a{
                 display:block;
                 width:@w;
-                height:176px;
+                height:auto;
                 img{
                     width:@w;
                 }
@@ -375,11 +384,12 @@ body{
             width:@w;
             ul{
                 width:@w;
-                height:261px;
+                height:auto;
+                overflow:hidden;
                 .bg(#fff);
                 li{
                     width:50%;
-                    height:261px;
+                    height:auto;
                     float:left;
                     img{
                         width:@w;
@@ -397,7 +407,6 @@ body{
                             font-size:10px;
                         }
                         .mark{
-
                             color:#fff;
                             background:#FF6666;
                             font-size:8px;
@@ -421,7 +430,7 @@ body{
 //more start
 .more{
     width:@w;
-    height:44px;
+    height:auto;
     border-bottom:1px solid #ccc;
     text-align:center;
     line-height:44px;
@@ -436,6 +445,7 @@ body{
 .footer-box{
     width:@w;
     height:auto;
+    padding-bottom:54px;
     .bg(#fff);
     .foot-top{
         width:@w;
@@ -487,7 +497,7 @@ body{
 //购物车
 .shoping{
     width:@w;
-    height:54px;
+    height:auto;
     .bg(#fff);
     position:fixed;
     bottom:0;

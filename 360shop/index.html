@@ -9,29 +9,44 @@
 </head>
 <body>
 <!--顶部搜索栏-->
-    <header class="search-box">
+    <header class="search-box cl">
         <input type="text" class="search" placeholder="搜索商品">
     </header>
 <!--顶部搜索栏结束-->
 <!--轮播图-->
-    <section class="banner-box">
+    <section class="banner-box cl">
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide banner-img">
-                    <a href="" style="background:url(imgs/banner5.jpg)no-repeat center center/cover"></a>
+                <div class="swiper-slide banner-img" style="z-index:1">
+                    <a href="">
+                        <img src="imgs/banner5.jpg" alt="">
+                    </a>
                 </div>
                 <div class="swiper-slide banner-img">
-                    <a href="" style="background:url(imgs/banner2.webp)no-repeat center center/cover"></a>
+                    <a href="">
+                        <img src="imgs/banner2.jpg" alt="">
+                    </a>
                 </div>
                 <div class="swiper-slide banner-img">
-                    <a href="" style="background:url(imgs/banner3.webp)no-repeat center center/cover"></a>
+                    <a href="">
+                        <img src="imgs/banner3.jpg" alt="">
+                    </a>
                 </div>
                 <div class="swiper-slide banner-img">
-                    <a href="" style="background:url(imgs/banner4.webp)no-repeat center center/cover"></a>
+                    <a href="">
+                        <img src="imgs/banner4.jpg" alt="">
+                    </a>
                 </div>
                 <div class="swiper-slide banner-img">
-                    <a href="" style="background:url(imgs/banner1.webp)no-repeat center center/cover"></a>
+                    <a href="">
+                        <img src="imgs/banner1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide banner-img">
+                    <a href="">
+                        <img src="imgs/banner6.jpg" alt="">
+                    </a>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -59,11 +74,11 @@
     </nav>
 <!--nav结束-->
 <!--news-->
-<div class="news-box">
+<div class="news-box cl">
         <span>
             <img src="imgs/Z.jpg" alt="">
         </span>
-        <div class="news">
+        <div class="news cl">
             <div class="news-show">
                 <a href="" class="news-list" style="z-index:1">
                     <em>最新</em>360商城APP首次登陆送188元现金券！
@@ -79,14 +94,14 @@
     </div>
 <!--new结束-->
 <!--抢购 start-->
-<section class="buying-box">
+<section class="buying-box cl">
         <div class="buyTime-box">
             <span>掌上抢</span>
             <div class="times">
                 距结束
-                <i>00</i>:
-                <i>00</i>:
-                <i>00</i>
+                <i id="hour">00</i>:
+                <i id="minute">00</i>:
+                <i id="second">00</i>
             </div>
             <a href="">惊爆特价限时抢&gt;</a>
         </div>
@@ -179,7 +194,7 @@
     </section>
 <!--抢购 end-->
 <!--product start-->
-<section class="product-stra">
+<section class="product-stra cl">
         <h2 class="product-title">
             <b>一</b>明星单品<b>一</b>
         </h2>
@@ -282,7 +297,7 @@
     </section>
 <!--product end-->
 <!--newProduct start-->
-<section class="newProduct-box">
+<section class="newProduct-box cl">
         <h2 class="product-title">
             <b>一</b>新品上市<b>一</b>
         </h2>
@@ -317,7 +332,7 @@
     </section>
 <!--newProduct end-->
 <!--Accessories start-->
-<section class="accessories-box">
+<section class="accessories-box cl">
         <h2 class="product-title">
             <b>一</b>手机及配件<b>一</b> 
         </h2>
@@ -1117,7 +1132,7 @@
 </section>
 <!--more    end-->
 <!--页脚 开始-->
-<footer class="footer-box">
+<footer class="footer-box cl">
     <div class="foot-top">
         <div class="content">
             <i>7</i>
@@ -1142,7 +1157,7 @@
 </footer>
 <!--页脚结束-->
 <!--底部购物车-->
-<section class="shoping">
+<section class="shoping cl">
     <ul>
         <li>
             <a href="">
@@ -1180,12 +1195,12 @@
         var swiper = new Swiper('.swiper-container',{
             loop:true,
             autoplay:3000,
-            pagination:'.swiper-pagination'
+            pagination:'.swiper-pagination',
+            autoplayDisableOnInteraction: false
         });
     </script>
     <script>
         var swiper = new Swiper('.timeLimit-box', {
-//        pagination:'.swiper-pagination',
         slidesPerView: 3
         });
     </script>
