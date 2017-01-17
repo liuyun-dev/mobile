@@ -95,6 +95,7 @@ body {
 }
 .service-box ul {
   background: #fff;
+  border-bottom: 1px solid #EFEFEF;
 }
 .service-box ul li {
   width: 50%;
@@ -103,6 +104,9 @@ body {
   padding: 0.4rem 0.45rem 0 0.2rem;
   float: left;
   background: #fff;
+}
+.service-box ul li .tj {
+  border-right: 1px solid #EFEFEF;
 }
 .service-box ul li .word {
   width: 50%;
@@ -150,6 +154,7 @@ body {
   width: 2.5rem;
   height: 1.4rem;
   padding: 0.4rem 0 0.4rem 0.2rem;
+  border-right: 1px solid #EFEFEF;
 }
 .service-box .content a .word1 {
   width: 70%;
@@ -173,9 +178,13 @@ body {
 .service-box .content a img {
   width: 0.6rem;
 }
+.service-box .content a:last-child {
+  border-right: 0;
+}
 footer {
   height: 0.8rem;
   margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
   background: #fff;
 }
 footer a {

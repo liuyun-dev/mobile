@@ -64,7 +64,7 @@ td {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
+  font-size: 16px;
   vertical-align: baseline;
   list-style: none;
   background: transparent;
@@ -485,11 +485,13 @@ body {
   float: left;
 }
 .footer-box .foot-top .content i {
-  width: 28%;
+  width: 0.66rem;
+  height: 0.66rem;
   display: inline-block;
-  line-height: 33px;
+  line-height: 0.66rem;
   border-radius: 50%;
   border: 1px solid #AAAAAA;
+  font-size: 10px;
 }
 .footer-box .foot-top .content em {
   display: block;
@@ -511,6 +513,9 @@ body {
 }
 .footer-box .foot-bottom a {
   color: #999;
+  font-size: 10px;
+}
+.footer-box .foot-bottom p {
   font-size: 10px;
 }
 .footer-box .foot-bottom .copyright {
@@ -544,8 +549,8 @@ body {
 }
 .shoping ul li a i {
   display: block;
-  width: 65%;
-  height: 65%;
+  width: 0.44rem;
+  height: 0.44rem;
   background: url(../imgs/sy.png) no-repeat center center / cover;
   margin: 0 auto;
 }

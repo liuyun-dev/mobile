@@ -114,6 +114,7 @@ body{
     }
     ul{
         .bg(#fff);
+        border-bottom:1px solid #EFEFEF;
         li{
             width:50%;
             height:1.92rem;
@@ -121,6 +122,9 @@ body{
             padding:0.4rem 0.45rem 0 0.2rem;
             float:left;
             .bg(#fff);
+            .tj{
+                border-right:1px solid #EFEFEF;
+            }
             .word{
                 width:50%;
                 float:left;
@@ -170,6 +174,7 @@ body{
             width:2.5rem;
             height:1.4rem;
             padding:0.4rem 0 0.4rem 0.2rem;
+            border-right:1px solid #EFEFEF;
             .word1{
                 width:70%;
                 float:right;
@@ -193,6 +198,9 @@ body{
                 width:0.6rem;
                 width:0.6rem;
             }
+            &:last-child{
+                border-right:0;
+            }
         }
     }
 }
@@ -201,7 +209,8 @@ body{
 //页脚
 footer{
     height:0.8rem;
-    margin-top:0.2rem;;
+    margin-top:0.2rem;
+    margin-bottom:0.4rem;
     .bg(#fff);
     a{
         display:block;
