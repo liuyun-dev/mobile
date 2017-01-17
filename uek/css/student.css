@@ -1,0 +1,143 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-size: 18px;
+  background: #F5F6FA;
+}
+.header {
+  text-align: center;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  background: #0078E6;
+}
+.header img {
+  width: 0.7rem;
+  vertical-align: middle;
+}
+.header h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  color: #fff;
+}
+.banner-box {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+.banner-box .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.banner-box .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.banner-box .swiper-container .swiper-wrapper .swiper-slide a {
+  display: block;
+  width: 100%;
+}
+.banner-box .swiper-container .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+}
+.mbx {
+  height: 0.82rem;
+  line-height: 0.82rem;
+  padding-left: 0.24rem;
+}
+.mbx a {
+  font-size: 12px;
+  color: #494747;
+  vertical-align: middle;
+}
+.mbx img {
+  height: 0.2rem;
+  vertical-align: middle;
+}
+.main-box {
+  padding: 0 0.24rem;
+}
+.main-box li {
+  width: 100%;
+  height: 1.85rem;
+  background: #fff;
+  padding: .2rem;
+  margin-bottom: .1rem;
+}
+.main-box li .imgs {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+.main-box li .main-name {
+  width: 70%;
+  height: 100%;
+  float: left;
+  padding-left: .3rem;
+}
+.main-box .name {
+  margin-top: .2rem;
+  display: inline-block;
+  font-size: 12px;
+  color: #111111;
+  padding: .1px 0;
+  border-bottom: 1px dashed #444444;
+}
+.main-box .name i {
+  font-size: 10px;
+  color: #444444;
+}
+.main-box .english {
+  font-size: 10px;
+  color: #444444;
+}
+.main-box .treatment {
+  display: block;
+  font-size: 13px;
+  margin: .1rem 0;
+  color: #94D43B;
+}
+.main-box .treatment i {
+  font-size: 10px;
+}
+.main-box .company {
+  display: block;
+  color: #444444;
+  font-size: 12px;
+}
+.pages-box {
+  height: .7rem;
+  background: #fff;
+  padding: .19rem .35rem;
+}
+.pages-box .btn-left,
+.pages-box .btn-right {
+  width: .58rem;
+  height: .31rem;
+  color: #999;
+  border-radius: 25px;
+  float: left;
+}
+.pages-box .btn-left img,
+.pages-box .btn-right img {
+  width: 100%;
+}
+footer {
+  height: 0.92rem;
+  text-align: center;
+  padding-top: 1px;
+}
+footer p {
+  font-size: 10px;
+  color: #666666;
+  margin: .21rem 0;
+}

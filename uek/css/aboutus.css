@@ -1,0 +1,138 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-size: 18px;
+  background: #F5F6FA;
+}
+.header {
+  text-align: center;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  background: #0078E6;
+}
+.header img {
+  width: 0.7rem;
+  vertical-align: middle;
+}
+.header h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  color: #fff;
+}
+.banner-box {
+  width: 100%;
+  height: auto;
+  border: none;
+  overflow: hidden;
+}
+.banner-box .banner {
+  width: 100%;
+  height: 100%;
+}
+.banner-box .banner .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.banner-box .banner .swiper-wrapper .swiper-slide a {
+  display: block;
+  width: 100%;
+}
+.banner-box .banner .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+}
+.mbx {
+  height: 0.82rem;
+  line-height: 0.82rem;
+  padding-left: 0.24rem;
+}
+.mbx a {
+  font-size: 12px;
+  color: #494747;
+  vertical-align: middle;
+}
+.mbx img {
+  height: 0.2rem;
+  vertical-align: middle;
+}
+.con-box {
+  padding: 0 .24rem;
+}
+.con-box .con {
+  width: 100%;
+  height: auto;
+  padding: .3rem .2rem .3rem .42rem;
+  margin-bottom: .1rem;
+  background: #fff;
+}
+.con-box .con h3 {
+  font-size: 12px;
+  padding-bottom: .14rem;
+  border-bottom: 1px dashed #999999;
+  position: relative;
+}
+.con-box .con h3 .border {
+  width: .04rem;
+  height: .2rem;
+  position: absolute;
+  left: -0.2rem;
+  top: 10%;
+  background: #01B5FF;
+}
+.con-box .con p {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5em;
+}
+.imgs-box {
+  width: 100%;
+  text-align: center;
+}
+.imgs-box img {
+  width: 1.33rem;
+  height: 1.33rem;
+  margin: 0 .30rem;
+}
+figure {
+  text-align: center;
+}
+figure img {
+  width: 1.68rem;
+  height: 1.68rem;
+}
+.pages-box {
+  height: .7rem;
+  background: #fff;
+  padding: .19rem .35rem;
+}
+.pages-box .btn-left,
+.pages-box .btn-right {
+  width: .58rem;
+  height: .31rem;
+  color: #999;
+  border-radius: 25px;
+  float: left;
+}
+.pages-box .btn-left img,
+.pages-box .btn-right img {
+  width: 100%;
+}
+footer {
+  height: 0.92rem;
+  text-align: center;
+  padding-top: 1px;
+}
+footer p {
+  font-size: 10px;
+  color: #666666;
+  margin: .21rem 0;
+}

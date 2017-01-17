@@ -1,0 +1,167 @@
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+}
+i{
+    font-style:normal;
+}
+
+//设置常用变量
+@w:100%;
+.bg(@r){
+    background:@r;
+}
+.border-radius(@b){
+    border-radius:@b;
+}
+body{
+    font-size:18px;
+    .bg(#F5F6FA);
+}
+
+//header start
+.header{
+    text-align:center;
+    height:0.9rem;
+    line-height:0.9rem;
+    .bg(#0078E6);
+    img{
+        width:0.7rem;
+        vertical-align:middle;
+    }
+    h3{
+        display:inline-block;
+        vertical-align:middle;
+        margin:0;
+        color:#fff;
+    }
+}
+//header end
+//banner开始
+.banner-box{
+    width:@w;
+    height:auto;
+    border:none;
+    .swiper-container {
+        width:@w;
+        height:@w;
+        .swiper-wrapper{
+            .swiper-slide{
+                width:@w;
+                a{
+                    display:block;
+                    width:@w;
+                    img{
+                        width:@w;
+                    }
+                }
+            }
+        }
+    }
+}
+//banner结束
+
+//面包屑
+.mbx{
+    height:0.82rem;
+    line-height:0.82rem;
+    padding-left:0.24rem;
+    a{
+        font-size:12px;
+        color: #494747;
+        vertical-align: middle;
+    }
+    img{
+        height:0.2rem;
+        vertical-align: middle;
+    }
+}
+
+//main 主体
+.main-box{
+    padding:0 0.24rem;
+    li{
+        width:100%;
+        height:1.85rem;
+        .bg(#fff);
+        padding:.2rem;
+        margin-bottom:.1rem;
+        .imgs{
+            width:30%;
+            height:100%;
+            float:left;
+        }
+        .main-name{
+            width:70%;
+            height:100%;
+            float:left;
+            padding-left:.3rem;
+        }
+    }
+}
+.main-box{
+    .name{
+        margin-top:.2rem;
+        display:inline-block;
+        font-size:12px;
+        color:#111111;
+        padding:.1px 0;
+        border-bottom:1px dashed #444444;
+        i{
+            font-size:10px;
+            color:#444444;
+        }
+    }
+    .english{
+        font-size:10px;
+        color:#444444;
+    }
+    .treatment{
+        display:block;
+        font-size:13px;
+        margin:.1rem 0;
+        color:#94D43B;
+        i{
+            font-size:10px;
+        }
+    }
+    .company{
+        display: block;
+        color:#444444;
+        font-size:12px;
+    }
+}
+
+//翻页
+.pages-box{
+    height:.7rem;
+    .bg(#fff);
+    padding:.19rem .35rem;
+    .btn-left,.btn-right{
+        width:.58rem;
+        height:.31rem;
+        color:#999;
+        border-radius:25px;
+        float:left;
+        img{
+            width:100%;
+        }
+    }
+}
+
+
+//页脚
+footer{
+    height:0.92rem;
+    text-align:center;
+    padding-top:1px;
+    p{
+        font-size:10px;
+        color:#666666;
+        margin:.21rem 0;
+    }
+}

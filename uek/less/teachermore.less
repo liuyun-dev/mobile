@@ -1,0 +1,188 @@
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+}
+i{
+    font-style:normal;
+}
+
+//设置常用变量
+@w:100%;
+.bg(@r){
+    background:@r;
+}
+.border-radius(@b){
+    border-radius:@b;
+}
+body{
+    font-size:18px;
+    .bg(#F5F6FA);
+}
+//header start
+.header{
+    text-align:center;
+    height:0.9rem;
+    line-height:0.9rem;
+    .bg(#0078E6);
+    img{
+        width:0.7rem;
+        vertical-align:middle;
+    }
+    h3{
+        display:inline-block;
+        vertical-align:middle;
+        margin:0;
+        color:#fff;
+    }
+}
+//header end
+//banner开始
+.banner-box{
+    width:@w;
+    height:auto;
+    border:none;
+    overflow:hidden;
+    .banner{
+        width:@w;
+        height:@w;
+        .swiper-wrapper{
+            .swiper-slide{
+                width:@w;
+                a{
+                    display:block;
+                    width:@w;
+                    img{
+                        width:@w;
+                    }
+                }
+            }
+        }
+    }
+}
+//banner结束
+//面包屑
+.mbx{
+    height:0.82rem;
+    line-height:0.82rem;
+    padding-left:0.24rem;
+    a{
+        font-size:12px;
+        color: #494747;
+        vertical-align: middle;
+    }
+    img{
+        height:0.2rem;
+        vertical-align: middle;
+    }
+}
+
+//关于我们主体内容
+.con-box{
+    padding:0 .24rem;
+    .con{
+        width:100%;
+        height:auto;
+        padding:.3rem .2rem .3rem .42rem;
+        margin-bottom:.1rem;
+        .bg(#fff);
+        h3{
+            font-size:12px;
+            padding-bottom:.14rem;
+            border-bottom:1px dashed #999999;
+            position:relative;
+            .border{
+                width:.04rem;
+                height:.2rem;
+                position:absolute;
+                left:-.2rem;
+                top:10%;
+                .bg(#01B5FF);
+            }
+        }
+        p{
+            font-size:12px;
+            color:#999;
+            line-height:1.5em;
+        }
+        img{
+            width:2.81rem;
+            height:2.81rem;
+        }
+        .brief-box{
+            width:50%;
+            height:2.81rem;
+            float:right;
+            padding-top:.2rem;
+            .name{
+                font-size:15px;
+                margin-bottom:.50rem;
+                span{
+                    font-size:10px;
+                    color:#01B5FF;
+                }
+            }
+            .zhuanye{
+                font-size:12px;
+                color:#333333;
+                margin-bottom:.2rem;
+                overflow:hidden;
+                i{
+                    display:inline-block;
+                    width:.4rem;
+                }
+                p{
+                    vertical-align:top;
+                    display:inline-block;
+                    width:50%;
+                    color:#000;
+                    margin:0;
+                    margin-top:-3px;
+                }
+            }
+        }
+    }
+}
+
+figure{
+    text-align:center;
+    img{
+        width:1.68rem;
+        height:1.68rem;
+    }
+}
+//内容结束
+
+
+
+
+//翻页
+.pages-box{
+    height:.7rem;
+    .bg(#fff);
+    padding:.19rem .35rem;
+    .btn-left,.btn-right{
+        width:.58rem;
+        height:.31rem;
+        color:#999;
+        border-radius:25px;
+        float:left;
+        img{
+            width:100%;
+        }
+    }
+}
+//页脚
+footer{
+    height:0.92rem;
+    text-align:center;
+    padding-top:1px;
+    p{
+        font-size:10px;
+        color:#666666;
+        margin:.21rem 0;
+    }
+}
