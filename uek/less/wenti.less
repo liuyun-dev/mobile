@@ -1,15 +1,85 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: Helvetica,"微软雅黑";
-}
-p{
-    margin: 0;
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 a{
-    text-decoration: none;
+    text-decoration:none;
 }
+i{
+    font-style:normal;
+}
+
+//设置常用变量
+@w:100%;
+.bg(@r){
+    background:@r;
+}
+.border-radius(@b){
+    border-radius:@b;
+}
+body{
+    font-size:18px;
+    .bg(#F5F6FA);
+}
+//header start
+.header{
+    text-align:center;
+    height:0.9rem;
+    line-height:0.9rem;
+    .bg(#0078E6);
+    img{
+        width:0.7rem;
+        vertical-align:middle;
+    }
+    h3{
+        display:inline-block;
+        vertical-align:middle;
+        margin:0;
+        color:#fff;
+    }
+}
+//header end
+//banner开始
+.banner-box{
+    width:@w;
+    height:auto;
+    border:none;
+    overflow:hidden;
+    .banner{
+        width:@w;
+        height:@w;
+        .swiper-wrapper{
+            .swiper-slide{
+                width:@w;
+                a{
+                    display:block;
+                    width:@w;
+                    img{
+                        width:@w;
+                    }
+                }
+            }
+        }
+    }
+}
+//banner结束
+//面包屑
+.mbx{
+    height:0.82rem;
+    line-height:0.82rem;
+    padding-left:0.24rem;
+    a{
+        font-size:12px;
+        color: #494747;
+        vertical-align: middle;
+    }
+    img{
+        height:0.2rem;
+        vertical-align: middle;
+    }
+}
+
 .header{
     width: 100%;
     height: .9rem;
@@ -21,25 +91,6 @@ a{
     .logo{
         height: 80%;
         vertical-align: middle;
-    }
-}
-.banner{
-    width: 100%;
-    height: auto;
-    .swiper-slide {
-        background: #fff;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
     }
 }
 .main{
@@ -79,7 +130,7 @@ a{
             }
             .yuan{
                 left: -.3rem;
-                top: .75rem
+                top: 1rem
             }
             .timu{
                 color: #444444;
