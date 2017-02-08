@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+</head>
+<style>
+    body,ul,li{
+        padding:0;
+        margin:0;
+        list-style:none;
+    }
+    *{
+        box-sizing:border-box;
+    }
+    html,body{
+        width:100%;
+        height:100%;
+    }
+    .box{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+    .content{
+        position:absolute;
+        width:100%;
+        height:90%;
+    }
+    .content li{
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:-100%;
+        text-align:center;
+        line-height:600px;
+        font-size:100px;
+        background:#ccc;
+    }
+    .content li:first-child{
+        z-index:1;
+    }
+    .btn{
+        width:100%;
+        height:10%;
+        position:absolute;
+        bottom:0;
+        left:0;
+    }
+    .btn li{
+        width:33.3333%;
+        height:100%;
+        float:left;
+        text-align:center;
+        line-height:66px;
+        font-size:30px;
+        border-right:1px solid #ccc;
+    }
+    .btn li:last-child{
+        border-right:0;
+    }
+    .contain.active{
+        left:0;
+    }
+</style>
+<body>
+    <div class="box">
+        <ul class="content">
+            <li class="contain active">1</li>
+            <li class="contain">2</li>
+            <li class="contain">3</li>
+        </ul>
+        <ul class="btn">
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+        </ul>
+    </div>
+    <script>
+        function hasClass( elements,cName ){
+            return !!elements.className.match( new RegExp( "(\\s|^)" + cName + "(\\s|$)") );
+        };
+        function addClass( elements,cName ){
+            if( !hasClass( elements,cName ) ){
+                elements.className += " " + cName;
+            };
+        };
+        function removeClass( elements,cName ){
+            if( hasClass( elements,cName ) ){
+                elements.className = elements.className.replace( new RegExp( "(\\s|^)" + cName + "(\\s|$)" ), " " );
+            };
+        };
+    </script>
+    <script>
+        var contains = document.querySelectorAll(".contain")
+        var btns = document.querySelectorAll(".item");
+        var num = contains[0]
+        btns.forEach(function(ele,i,arr){
+            ele.addEventListener("touchstart",function(){
+                removeClass(num,"active")
+                addClass( contains[i],"active");
+                num=contains[i]
+            })
+        })
+    </script>
+</body>
+</html>

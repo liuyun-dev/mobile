@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+</head>
+<style>
+    body,ul,li{
+        padding:0;
+        margin:0;
+        list-style:none;
+    }
+    *{
+        box-sizing:border-box;
+    }
+    html,body{
+        width:100%;
+        height: 100%;
+    }
+    .box{
+        width:100%;
+        overflow:hidden;
+        animation:move 5s linear infinite  ;
+    }
+    @keyframes move {
+
+    }
+    ul{
+        width:500%;
+        height:auto;
+    }
+    li{
+        width:20%;
+        display:block;
+        float:left;
+    }
+    img{
+        width:100%;
+    }
+</style>
+<body>
+    <div class="box">
+        <ul>
+            <li><a href=""><img src="imgs/1.jpg" alt=""></a></li>
+            <li><a href=""><img src="imgs/2.jpg" alt=""></a></li>
+            <li><a href=""><img src="imgs/3.jpg" alt=""></a></li>
+            <li><a href=""><img src="imgs/4.jpg" alt=""></a></li>
+            <li><a href=""><img src="imgs/5.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <script>
+        var box = document.querySelector(".box");
+        var show = document.querySelector("ul");
+        var links = document.querySelectorAll("li");
+        var cw = document.documentElement.clientWidth;
+        var i=0;
+        var t = setInterval(tt,3000)
+        function tt(){
+            i++;
+            if(i==links.length){
+                i = 0;
+            }
+            show.style.transition="transform .5s"
+            show.style.transform="translate3d("+(-i*cw)+"px,0,0)"
+        }
+        box.addEventListener("touchstart",function(e){
+            clearInterval(t)
+            show.style.transition=""
+            var sx = e.targetTouches[0].clientX;
+            var mx = 0;
+            var st = e.timeStamp;
+            function move(e){
+                mx =e.targetTouches[0].clientX;
+                show.style.transform="translate3d("+(mx-sx-cw*i)+"px,0,0)"
+            }
+            box.addEventListener("touchmove",move);
+            function end(e){
+                var et = e.timeStamp;
+                show.style.transition="transform .5s"
+                console.log(et-st)
+                if(sx-mx>cw/2||(et-st<100)){
+                    i++;
+                    if(i==links.length){
+                        i = links.length-1
+                    }
+                    show.style.transform="translate3d("+-cw*i+"px,0,0)";
+                }else if(mx-sx>cw/2||(et-st<100)){
+                    i--;
+                    if(i==-1){
+                        i = 0;
+                    }
+                    show.style.transform="translate3d("+-cw*i+"px,0,0)";
+                }else{
+                    show.style.transform="translate3d("+-cw*i+"px,0,0)";
+                }
+                t = setInterval(tt,3000)
+                box.removeEventListener("touchmove",move)
+                box.removeEventListener("touchend",end)
+            }
+            box.addEventListener("touchend",end)
+        })
+
+
+    </script>
+</body>
+</html>

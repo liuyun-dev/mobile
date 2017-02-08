@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/show_uek-news.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+
+<section class="article">
+    <!--面包线-->
+    <h2 class="crumbs">
+        <a href="">首页</a><span>></span>
+        <a href="">优逸新闻</a><span>></span>
+        <a href="">新闻详情</a>
+    </h2>
+    <h2 class="uek-new-title"><strong>原始森林</strong>深度行攻略</h2>
+    <h2 class="uek-new-title">始终如一，感受地球创世纪之美</h2>
+    <p>
+        <span>999人浏览</span>
+        <span>2016-09-22</span>
+        <span></span>
+    </p>
+
+    <div class="part1">
+        <p class="title">
+           <strong>一切以用户需求为中心</strong>
+           <span>/</span>
+            <span>all user needs as the center</span>
+        </p>
+        <p>公司文化:公司以“专注网站,用心服务”为核心价值,一切以用户需求为中心,希望通过专业水平和不懈努力,重塑企业网络形象,为企业产品推广文化发展提供服务指导;塑企业网络形象,为企业产品推广文化发展提供塑企业网络形象,为企业产品推广文化发展提供</p>
+        <li>公司主要产品:主要为企业提供网站策划,网站设计制作,网站推广优化等服务;</li>
+        <li>销售业绩以及网络:为中小企业提供网站策划服务,先阶段主要面向XX地区;</li>
+        <li>售后服务:XX网站策划有详细的售后服务体系,提供终生策划指导服务。</li>
+        <li>以上就是关于新饶网站策划的一个分类详细说明,下面开始整理书写:</li>
+    </div>
+    <div class="part1">
+        <p class="title">
+            <strong>一切以用户需求为中心</strong>
+            <span>/</span>
+            <span>all user needs as the center</span>
+        </p>
+        <p>公司文化:公司以“专注网站,用心服务”为核心价值,一切以用户需求为中心,希望通过专业水平和不懈努力,重塑企业网络形象,为企业产品推广文化发展提供服务指导;塑企业网络形象,为企业产品推广文化发展提供塑企业网络形象,为企业产品推广文化发展提供</p>
+        <p>三年来,XX网站策划一直秉承以用户需求为核心,在专注XX本地市场开拓的同时,为超过一百家中小企业提供网站策划服务,优质、用心的服务赢得了众多企业的信赖和好评,在XX地区逐渐树立起公司良好品牌。公司不仅仅提供专业的网站策划服务,同时还建立了完善的售后服务体系,为企业发展中遇到的问题和困难提供指导帮助。我们相信,通过我们的不断努力和追求,一定能够实现与中小企业的互利共赢!</p>
+    </div>
+    <section class="pic-box">
+        <img src="images/new-xiang3.jpg" alt="">
+        <img src="images/new-xiang1.jpg" alt="">
+        <img src="images/new-xiang2.jpg" alt="">
+        <div class="dir">
+            <div class="dir-l"></div>
+            <div class="dir-r"></div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="student-head">
+            <strong>最新评论</strong><b>|</b>
+            <span style="font-weight: bold">RECENT REVIEWS</span>
+            <a href="">查看更多>></a>
+        </div>
+
+        <div class="review-box clear">
+           <div class="img-box">
+               <img src="" alt="">
+           </div>
+            <div class="review-txt">
+                <p class="mess">
+                    <strong>James</strong>
+                    <b>.</b>
+                    <span>2015-03-06</span>
+                    <span>12:23</span>
+                </p>
+                <p>越来越PHP开发工程师与平面设计师的培养和输送。为响应工业和信息化部“工业和信息化领域紧缺人才培养工程”，结合山西本省高校大学生的实际情况，优逸客特别推出了《互联网高端UI设计&开发的校企合作手册》。多的</p>
+                <div class="floor">01</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Message-Board">
+        <div class="student-head">
+            <strong>留言板</strong><b>|</b>
+            <span style="font-weight: bold">Message Board</span>
+        </div>
+        <div class="add">
+            <a href="javascript:;"></a>
+        </div>
+        <div class="review">
+            <input class="input-txt" type="text" placeholder="请批阅......">
+
+        </div>
+        <div class="tips">
+            还可输入<span class="number">300</span>字
+        </div>
+        <input type="submit" value="评论">
+    </div>
+</section>
+
+</body>
+</html>
+
+<script>
+    var inputTxt = $(".input-txt");
+    var number = $('.number');
+    $(window).on("keydown",function(e){
+        var inputL = inputTxt.val().length+1;
+       number.html(function(){
+           return 300-inputL
+       });
+    })
+</script>

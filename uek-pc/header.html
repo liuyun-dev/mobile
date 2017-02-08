@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<!--头部-->
+   <header>
+        <div class="head-box">
+            <div class="head-left">
+                <a href="">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <a>
+                    <p>山西优逸客科技有限公司</p>
+                    <p>专注/极致/口碑</p>
+                </a>
+            </div>
+            <div class="head-right">
+                <div class="img-box">
+                    <img src="images/Brand.png" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="images/Honor.png" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="images/stories.png" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="images/tel.png" alt="">
+                </div>
+            </div>
+        </div>
+   </header>
+<!--导航栏-->
+   <nav>
+       <div class="top-bar">
+           <li class="active website">
+               <a href="">首页</a>
+           </li>
+           <li >
+               <a href="javascript:;">课程设置</a>
+               <span class="top-hidden">
+                   <a href="">UI设计培训</a>
+                   <a href="">前端与移动开发培训</a>
+                   <a href="">php培训</a>
+                   <span></span>
+               </span>
+           </li>
+           <li>
+               <a href="">高薪学员</a>
+               <span class="top-hidden">
+                   <a href="">UI设计培训</a>
+                   <a href="">前端与移动开发培训</a>
+                   <a href="">php培训</a>
+                   <span></span>
+               </span>
+           </li>
+           <li>
+               <a href="">金牌师资</a>
+               <span class="top-hidden">
+                   <a href="">UI设计培训</a>
+                   <a href="">前端与移动开发培训</a>
+                   <a href="">php培训</a>
+                   <span></span>
+               </span>
+           </li>
+           <li>
+               <a href="">学员作品</a>
+           </li>
+           <li>
+               <a href="">我要报名</a>
+           </li>
+           <li>
+               <a href="">关于我们</a>
+           </li>
+       </div>
+
+   </nav>
+</body>
+</html>
+<script>
+   var topBar = $(".top-bar");
+   var topLis = $("li",topBar).not(".website")
+   var topALink = $("a",topBar);
+   var topHidden = $(".top-hidden");
+   var hiddenA = $("a",topHidden);
+   topLis.hover(function(){
+       $(this).addClass("active")
+       $("li:first-child",topBar).removeClass("active")
+       $(this).find(topHidden).slideDown(300);
+   },function(){
+       $(this).removeClass("active");
+       $("li:first-child",topBar).addClass("active");
+       $(this).find(topHidden).slideUp(500)
+   })
+</script>

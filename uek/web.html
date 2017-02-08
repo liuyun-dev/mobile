@@ -130,38 +130,48 @@
     </div>
     <div class="con">
         <h3>就业学员薪资<div class="border"></div></h3>
-        <table>
-            <tr class="title">
-                <th>姓名</th>
-                <th>薪资</th>
-                <th>其他福利</th>
-            </tr>
-            <tr>
-                <td class="name">张同学 <div class="circle"></div></td>
-                <td class="money">RMB:12000</td>
-                <td class="daiyu">五险一金+提成+13薪+其他福利</td>
-            </tr>
-            <tr>
-                <td class="name">张同学 <div class="circle"></div></td>
-                <td class="money">RMB:12000</td>
-                <td class="daiyu">五险一金+提成+13薪+其他福利</td>
-            </tr>
-            <tr>
-                <td class="name">张同学 <div class="circle"></div></td>
-                <td class="money">RMB:12000</td>
-                <td class="daiyu">五险一金+提成+13薪+其他福利</td>
-            </tr>
-            <tr>
-                <td class="name">张同学 <div class="circle"></div></td>
-                <td class="money">RMB:12000</td>
-                <td class="daiyu">五险一金+提成+13薪+其他福利</td>
-            </tr>
-            <tr>
-                <td class="name">张同学 <div class="circle"></div></td>
-                <td class="money">RMB:12000</td>
-                <td class="daiyu">五险一金+提成+13薪+其他福利</td>
-            </tr>
-        </table>
+        <div class="stu-title">
+            <p class="name">姓名</p>
+            <p class="money">薪资</p>
+            <p class="other">其他福利</p>
+        </div>
+        <ul class="left">
+            <li class="dian"><div class="circle"></div></li>
+            <li class="dian"><div class="circle"></div></li>
+            <li class="dian"><div class="circle"></div></li>
+            <li class="dian"><div class="circle"></div></li>
+            <li class="dian"><div class="circle"></div></li>
+            <li class="dian"><div class="circle"></div></li>
+        </ul>
+        <div class="right_box swiper-container ">
+            <ul class="swiper-wrapper right-content">
+                <li class="stu-list swiper-slide swiper-slide-duplicate">
+                    <p class="stu-name">张雅茹</p>
+                    <p class="ld-moneycolor">RMB：10000</p>
+                    <p class="stu-welfare">五险一金＋双休＋其他补助福利</p>
+                </li>
+                <li class="stu-list swiper-slide swiper-slide-duplicate">
+                    <p class="stu-name">张雅茹</p>
+                    <p class="ld-moneycolor">RMB：10000</p>
+                    <p class="stu-welfare">五险一金＋双休＋其他补助福利</p>
+                </li>
+                <li class="stu-list swiper-slide swiper-slide-duplicate">
+                    <p class="stu-name">张雅茹</p>
+                    <p class="ld-moneycolor">RMB：10000</p>
+                    <p class="stu-welfare">五险一金＋双休＋其他补助福利</p>
+                </li>
+                <li class="stu-list swiper-slide swiper-slide-duplicate">
+                    <p class="stu-name">张雅茹</p>
+                    <p class="ld-moneycolor">RMB：10000</p>
+                    <p class="stu-welfare">五险一金＋双休＋其他补助福利</p>
+                </li>
+                <li class="stu-list swiper-slide swiper-slide-duplicate">
+                    <p class="stu-name">张雅茹</p>
+                    <p class="ld-moneycolor">RMB：10000</p>
+                    <p class="stu-welfare">五险一金＋双休＋其他补助福利</p>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="con">
         <h3>课程安排<div class="border"></div></h3>
@@ -176,14 +186,33 @@
     <p class="about">联系电话：400-888-6747 晋ICP备130</p>
 </footer>
 <script src="js/swiper.min.js"></script>
-<script src="js/idangerous.swiper.min.js"></script>
+<!--<script src="js/idangerous.swiper.min.js"></script>-->
 <script src="js/index.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/Swiper2.7.6.js"></script>
 <script>
     var swiper = new Swiper('.banner',{
         loop:true,
         autoplay:3000,
         autoplayDisableOnInteraction: false
+    });
+</script>
+<script>
+    var mySwiper = new Swiper('.right_box',{
+        speed:2000,
+        autoplay : 2000,//可选选项，自动滑动
+        loop : true,//可选选项，开启循环
+        mode : 'vertical',
+        slidesPerView : 'auto',
+        loopedSlides :5,
+        onSwiperCreated: function(swiper){
+            $('.big_box .swiper-slide-active').prev(".swiper-slide").find("h1").css({display:"none"});
+        },
+        onSlideChangeEnd: function(swiper){
+            $('.big_box .swiper-slide-active').prev(".swiper-slide").find("h1").css({display:"none"});
+            $('.big_box .swiper-slide-active').next(".swiper-slide").next(".swiper-slide").next(".swiper-slide").next(".swiper-slide").next(".swiper-slide").next(".swiper-slide").next(".swiper-slide").next(".swiper-slide").find("h1").css({display:"block"});
+            $('.big_box .swiper-slide-active').prev(".swiper-slide").prev(".swiper-slide").find("h1").css({display:"block"});
+        }
     });
 </script>
 </body>

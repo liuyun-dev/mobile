@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border:0;
+        vertical-align: middle;
+    }
+    .aa{
+        width: 100%;
+        background: red;
+        overflow: hidden;
+    }
+    .box{
+        width: 600%;
+        height: 100%;
+    }
+    .bb{
+        width: 16.666667%;
+        height: 100%;
+        float: left;
+    }
+    .bb:nth-child(1){
+        background: url(imgs/1.jpg) center center/cover;
+    }
+    .bb:nth-child(2){
+        background: url(imgs/2.jpg) center center/cover;
+    }
+    .bb:nth-child(3){
+        background: url(imgs/3.jpg) center center/cover;
+    }
+    .bb:nth-child(4){
+        background: url(imgs/4.jpg) center center/cover;
+    }
+    .bb:nth-child(5){
+        background: url(imgs/5.jpg) center center/cover;
+    }
+    .bb:nth-child(6){
+        background: url(imgs/1.jpg) center center/cover;
+    }
+</style>
+<body>
+    <div class="aa">
+        <div class="box">
+            <div class="bb"></div>
+            <div class="bb"></div>
+            <div class="bb"></div>
+            <div class="bb"></div>
+            <div class="bb"></div>
+            <div class="bb"></div>
+        </div>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script>
+    var pw=$(window).width();
+    var aa=$(".aa");
+    var box=$(".box");
+    aa.css({height:pw*0.6+"px"});
+    var i=0;
+    var kaishi,jieshu;
+//    轮播
+    function lunbo(){
+        i++;
+        if(i==6){
+            i=1;
+            box.css({transition:"",transform:"translate(0)"});
+            setTimeout(function () {
+                box.css({transition:"1s",transform:"translate("+(-i*pw)+"px)"});
+            },0.00001)
+        }else{
+            box.css({transition:"1s",transform:"translate("+(-i*pw)+"px)"});
+        }
+    }
+    var t=setInterval(lunbo,2000);
+//    滑动
+    box[0].addEventListener("touchstart",function(e){
+        clearInterval(t);
+        var ax=e.targetTouches[0].clientX;
+        var bx=0;
+        box.css({transition:""});
+        var date1=new Date();
+        kaishi=date1.getTime();
+        function move(e){
+            bx=e.targetTouches[0].clientX;
+            box.css({transform:"translate("+(bx-ax-i*pw)+"px)"});
+        }
+        function end(e){
+            window.removeEventListener("touchmove",move);
+            window.removeEventListener("touchend",end);
+            t=setInterval(lunbo,2000);
+            var date2 =new Date();
+            jieshu=date2.getTime();
+            if((ax-bx>pw/2||jieshu-kaishi<1000&&ax-bx>0)&&bx>0){
+                i++;
+                if(i==6){
+                    i=5;
+                }
+                box.css({transition:".3s",transform:"translate("+(-i*pw)+"px)"});
+            }else if(bx-ax>pw/2||jieshu-kaishi<1000&&bx-ax>0){
+                i--;
+                if(i==-1){
+                    i=0;
+                }
+                box.css({transition:".3s",transform:"translate("+(-i*pw)+"px)"});
+            }else{
+                box.css({transition:".3s",transform:"translate("+(-i*pw)+"px)"});
+            }
+        }
+        window.addEventListener("touchmove",move);
+        window.addEventListener("touchend",end);
+    })
+</script>
+</html>

@@ -1,0 +1,114 @@
+.video-head{
+  font-size: 0;
+  strong{
+    font-size: 16px;
+    color: #000;
+  }
+  b{
+    font-size: 16px;
+    color: #02B5FF;
+    margin-right: 10px;
+  }
+  span{
+    color: #707070;
+    font-size: 12px;
+    margin:  0 17px;
+  }
+  a{
+    font-size: 12px;
+    color: #707070;
+  }
+}
+
+
+.video-container{
+  background: #fff;
+  width: 1200px;
+  border: 1px solid #bbb ;
+  margin: 30px auto 0;
+  padding-bottom: 30px;
+  .category-video-title{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  //ui视频
+  section.uek-video{
+    width: 1200px;
+    position: relative;
+    margin: 60px auto 0;
+    padding: 0 30px;
+    .video-box{
+      padding-top: 30px;
+      width: 100%;
+      a{
+        float:left;
+        width: 262px;
+        height: 211px;
+        background: #F6F6F6;
+        margin-right: 30px;
+        margin-bottom: 22px;
+        &>span{
+          background: #ccc;
+          display: block;
+          overflow: hidden;
+          width: 100%;
+          height: 151px;
+          img{
+            width: 100%;
+          }
+
+        }
+        p{
+          font-size: 11px;
+          margin: 15px 0;
+          color: #222222;
+          &:nth-of-type(2){
+            margin: 0;
+            color: #666666;
+            span:nth-of-type(1){
+              float: left;
+              &:before{
+                content: "下载量";
+              }
+            }
+            span:nth-of-type(2){
+              float: right;
+              &:before{
+                content: "学习人数";
+              }
+            }
+          }
+        }
+        &:nth-child(4n){
+          margin-right: 0;
+        }
+      }
+    }
+    .pagination{
+       margin: 45px auto 0;
+      max-width: 282px;
+      a{
+        float: left;
+        margin-right: 4px;
+        border: 1px solid #DADADA;
+        width: 42px;
+        height: 42px;
+        color: #777777;
+        background: #fff;
+        text-align: center;
+        line-height: 40px;
+        &.active{
+          background: #777777;
+          color: #fff;
+        }
+        &:last-child:after{
+            content: ">";
+        }
+      }
+    }
+  }
+}

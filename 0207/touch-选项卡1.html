@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+</head>
+</head>
+<style>
+    body,ul,li{
+        padding:0;
+        margin:0;
+        list-style:none;
+    }
+    *{
+        box-sizing:border-box;
+    }
+    html,body{
+        width:100%;
+        height:100%;
+    }
+    .box{
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+    .show{
+        width:400%;
+        height:90%;
+        transform:translate(0);
+        transition:transform .5s
+    }
+    .show>li{
+        width:25%;
+        height:100%;
+        text-align:center;
+        line-height:600px;
+        font-size:100px;
+        float:left;
+    }
+    .show>li:nth-child(1){
+        background:red;
+    }
+    .show>li:nth-child(2){
+        background:blue;
+    }
+    .show>li:nth-child(3){
+        background:greenyellow;
+    }
+    .show>li:nth-child(4){
+        background:yellow;
+    }
+    .btns{
+        border-top:1px solid #ccc;
+        width:100%;
+        height:10%;
+    }
+    .btns>li{
+        width:25%;
+        height:100%;
+        float:left;
+        text-align:center;
+        line-height:60px;
+        font-size:30px;
+        border-right:1px solid #ccc;
+    }
+    .btns>li:last-child{
+             border-right:none;
+         }
+</style>
+<body>
+    <div class="box">
+        <ul class="show">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div class="btns">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </div>
+    </div>
+    <script>
+        var show = document.querySelector(".show");
+        var links = document.querySelectorAll(".show li")
+        var items = document.querySelectorAll(".btns>li");
+        var  num = 0;
+        items.forEach(function(ele,i,arr){
+            ele.addEventListener("touchstart",function(){
+                show.style.transform="translate(-"+i*25+"%)";
+                ele.style.background="red"
+                arr[num].style.background="";
+                num = i;
+            })
+        })
+    </script>
+</body>
+</html>
