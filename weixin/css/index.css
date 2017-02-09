@@ -1,0 +1,179 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  list-style: none;
+  background: transparent;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: .88rem;
+  background: #24252B;
+  display: flex;
+}
+.header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.header div:first-child {
+  margin-left: .22rem;
+  background: url(../imgs/me.png) no-repeat center left / 28%;
+}
+.header div:last-child {
+  margin-right: .22rem;
+  background: url(../imgs/diandian.png) no-repeat center right / 28%;
+}
+.main {
+  width: 100%;
+  height: auto;
+}
+.main .money-box {
+  width: 100%;
+  height: 2.7rem;
+  background: #686F78;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .money-box .shou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main .money-box .shou img {
+  width: .7rem;
+}
+.main .money-box .shou span {
+  color: #fff;
+  margin-top: .35rem;
+}
+.main .money-box .shou .qian {
+  font-size: 10px;
+  color: #B4B7BC;
+  position: absolute;
+  bottom: .44rem;
+}
+.main .title {
+  width: 100%;
+  height: .84rem;
+  background: #EFEFF4;
+  font-size: 14px;
+  padding: .34rem .30rem;
+}
+.main .item-box {
+  width: 100%;
+  height: 5.88rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .item-box .item {
+  flex: 0 1 33.3333%;
+  border-right: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+}
+.main .item-box .item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .item-box .item a img {
+  width: .47rem;
+}
+.main .item-box .item a span {
+  font-size: 13px;
+  margin-top: .29rem;
+  color: #000;
+}
+.main .item-box .item:nth-child(3n) {
+  border-right: 0;
+}
