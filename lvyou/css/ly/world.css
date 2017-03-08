@@ -1,0 +1,84 @@
+﻿* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+i {
+  font-style: normal;
+}
+.head {
+  wdith: 100%;
+  height: .88rem;
+  background: #3867FA;
+  position: relative;
+}
+.head .title {
+  width: 2.76rem;
+  height: .4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.head .seach-logo {
+  width: .42rem;
+  height: .42rem;
+  background: url(../../images/ly/seach.png) no-repeat center center / 100%;
+  position: absolute;
+  right: .24rem;
+  top: 50%;
+  transform: translate(0, -44%);
+}
+.item-box {
+  width: 100%;
+  padding: 0 .31rem;
+  height: auto;
+}
+.item-box .list {
+  width: 100%;
+  height: 4.52rem;
+  margin: .23rem 0;
+  box-shadow: 0 0 0.1rem 0.05rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.item-box .list h3 {
+  display: block;
+  font-size: 23px;
+  color: #Fff;
+}
+.item-box .list .more {
+  display: block;
+  width: 1.66rem;
+  height: .53rem;
+  background: url(../../images/ly/more.png) no-repeat center center / 100%;
+  margin-top: .28rem;
+}
+.item-box .list .function {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .9rem;
+  height: 100%;
+  background: #3867FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.item-box .list .function a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-box .list .function a img {
+  width: .59rem;
+  height: .66rem;
+}

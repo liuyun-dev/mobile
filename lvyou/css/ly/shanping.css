@@ -1,0 +1,57 @@
+﻿html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+.out-box {
+  width: 100%;
+  height: .88rem;
+  padding: 0 .24rem;
+}
+.out-box .out {
+  height: 100%;
+  line-height: .88rem;
+  font-size: 15px;
+  color: #333;
+  float: right;
+  font-weight: 700;
+}
+.img-bg {
+  width: 100%;
+  height: 9.18rem;
+}
+.btn-box {
+  width: 1.2rem;
+  height: .16rem;
+  margin: 0 auto;
+  margin-top: 1.7rem;
+}
+.btn-box .btn {
+  width: .16rem;
+  height: .16rem;
+  float: left;
+  border-radius: 50%;
+  margin-right: .22rem;
+  background: #F0F0F0;
+}
+.btn-box .btn:first-child {
+  background: #3867FA;
+}
+.login {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 1.83rem;
+  width: 3.38rem;
+  height: .86rem;
+  background: #3867FA;
+  border-radius: .3rem;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}

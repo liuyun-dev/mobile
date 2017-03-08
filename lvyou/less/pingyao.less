@@ -1,0 +1,151 @@
+// 这里是注释
+
+*{
+	box-sizing:border-box;
+	font-size:16px;
+}
+i{
+	font-style:normal;
+}
+// 头部样式
+.head{
+	width:100%;
+	height:.88rem;
+	background:#3867FA;
+	position:fixed;
+	top:0;left:0;
+	z-index: 99;
+	.title{
+		width:2.76rem;
+		height:.4rem;
+		position:absolute;
+		top:0;left:0;right:0;bottom:0;
+		margin:auto;
+	}
+	.seach-logo{
+		width:.42rem;
+		height:.42rem;
+		background:url(../../images/ly/seach.png)no-repeat center center/100%;
+		position:absolute;
+		right:.24rem;
+		top:50%;
+		transform:translate(0,-44%);
+	}
+}
+html,body{
+	height:100%;
+	background:url(../../images/ly/bg5.jpg)no-repeat center center/cover;
+}
+// 内容主题块
+
+.content-box{
+	width:100%;
+	height:100%;
+	background:rgba(64,107,247,.9);
+	padding:.88rem .87rem 0;
+	position:relative;
+	header{
+		text-align: center;
+		color:#fff;
+		h2{
+			margin-top:.32rem;
+			font-size:18px;
+		}
+		span{
+			display:block;
+			margin-top:.18rem;
+			font-size:15px;
+		}
+	}
+	.content{
+		width:100%;
+		height:7.85rem;
+		background:#fff;
+		margin-top:.37rem;
+		border-radius:.15rem;
+		box-shadow:0 0 .2rem .2rem rgba(0,0,0,.1);
+		position:relative;
+		.img-bg{
+			width:100%;
+			height:4.93rem;
+			position:relative;
+		}
+		.star{
+			width:.91rem;
+			height:1rem;
+			position:absolute;
+			right:.71rem;
+			bottom:0;
+			transform:translate(0,50%);
+		}
+		.text{
+			width:100%;
+			height:2rem;
+			position:absolute;
+			bottom:.5rem;
+			left:0;
+			text-align: center;
+			span{
+				display:block;
+				color:#333;
+				font-size:11px;
+				margin-top:.14rem;
+			}
+		}
+		.line-box{
+			width:1.31rem;
+			height:.52rem;
+			margin:0 auto;
+			padding-top:.26rem;
+			.line{
+				float:left;
+				width:.51rem;
+				border:1px solid #000000;
+			}
+			.dian{
+				float:left;
+				width:.05rem;
+				height:.05rem;
+				background:#000;
+				margin:0 .12rem;
+			}
+		}
+	}
+	.bian1{
+			width:5.42rem;
+			height:.39rem;
+			position:absolute;
+			background:#fff;
+			left:1.05rem;
+			top:10.2rem;
+			border-radius:.15rem;
+			box-shadow:0 .2rem .2rem .2rem rgba(0,0,0,.1);
+	}
+	.bian2{
+			width:5.14rem;
+			height:.39rem;
+			position:absolute;
+			background:#fff;
+			left:1.2rem;
+			top:10.4rem;
+			border-radius:.15rem;
+			box-shadow:0 .2rem .2rem .2rem rgba(0,0,0,.1);
+	}
+	.button{
+		display:block;
+		width:2.84rem;
+		height:.79rem;
+		border:40px;
+		border-radius:30px;
+		background:#FFC200;
+		position:absolute;
+		bottom:1rem;
+		left:50%;
+		transform:translate(-50%);
+		text-align:center;
+		line-height:.79rem;
+		color:#fff;
+		font-weight:600;
+		text-shadow: 0 .05rem 0.03rem rgba(0,0,0,.3);
+	}
+}

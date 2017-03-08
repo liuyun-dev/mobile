@@ -1,0 +1,259 @@
+﻿* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+i {
+  font-style: normal;
+}
+html,
+body {
+  height: 100%;
+}
+.head {
+  wdith: 100%;
+  height: .88rem;
+  background: #3867FA;
+  position: relative;
+}
+.head .title {
+  width: 2.76rem;
+  height: .38rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.head .seach-logo {
+  width: .42rem;
+  height: .42rem;
+  background: url(../../images/ly/seach.png) no-repeat center center / 100%;
+  position: absolute;
+  right: .24rem;
+  top: 50%;
+  transform: translate(0, -44%);
+}
+.btnBox {
+  wdith: 100%;
+  height: 1rem;
+  position: relative;
+}
+.btnBox .dongtai {
+  font-size: 12px;
+  width: 1.68rem;
+  height: .68rem;
+  box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: .4rem;
+  transform: translate(-80%);
+  text-align: center;
+  line-height: .68rem;
+  color: #3867FA;
+  background: #fff;
+}
+.btnBox .xiaoxi {
+  font-size: 12px;
+  width: 1.68rem;
+  height: .68rem;
+  box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: .4rem;
+  text-align: center;
+  line-height: .68rem;
+  color: #fff;
+  background: #3867FA;
+}
+.contet-box {
+  with: 100%;
+  height: auto;
+  margin-top: .3rem;
+  padding: 0 .55rem;
+}
+.contet-box .lists {
+  width: 100%;
+  height: auto;
+  border-radius: .2rem;
+  box-shadow: 0 0 0.2rem 0.05rem rgba(0, 0, 0, 0.1);
+  padding: .3rem .8rem .25rem;
+  position: relative;
+  margin-top: .4rem;
+}
+.contet-box .lists .touxiang {
+  width: .78rem;
+  height: .78rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.1rem 0.05rem rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.contet-box .lists span {
+  display: block;
+}
+.contet-box .lists .name {
+  font-size: 10px;
+  margin-bottom: .2rem;
+}
+.contet-box .lists .title {
+  font-size: 11px;
+  margin-bottom: .2rem;
+}
+.contet-box .lists .img-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contet-box .lists .img-box li {
+  border-radius: .2rem;
+}
+.contet-box .lists .img-box .img {
+  width: 1.07rem;
+  height: 1.01rem;
+  background: url(../../images/ly/bg1.jpg) no-repeat center center / cover;
+}
+.contet-box .lists .img-box .images {
+  width: 2.53rem;
+  height: 1.38rem;
+  margin-right: .12rem;
+  background: url(../../images/ly/bg2.jpg) no-repeat center center / cover;
+}
+.contet-box .lists .img-box .add {
+  width: 1.07rem;
+  height: 1.01rem;
+  background: #3867fa url(../../images/ly/add.png) no-repeat center -0.03rem / cover;
+}
+.foot {
+  width: 100%;
+  height: .98rem;
+  background: #003EFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.foot ul {
+  width: 100%;
+  height: .98rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foot ul li {
+  width: 100%;
+  height: 100%;
+}
+.foot ul li a {
+  color: #fff;
+  font-size: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot ul li a img {
+  width: .61rem;
+  height: .65rem;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+.mask .blue-bg {
+  width: 4.07rem;
+  height: 6.42rem;
+  background: #3665F0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: .2rem;
+}
+.mask .box {
+  width: 4.85rem;
+  height: 5.71rem;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: .2rem;
+  padding-top: 1.65rem;
+  text-align: center;
+}
+.mask .box img {
+  width: 2.01rem;
+  height: 1.95rem;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.mask .box .touxiang {
+  height: .55rem;
+  width: .55rem;
+  float: left;
+  margin-right: .2rem;
+}
+.mask .box .user-name {
+  display: block;
+  float: left;
+  margin-top: .1rem;
+}
+.mask .box .user {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+.mask .box .look {
+  display: block;
+  width: 3.9rem;
+  height: .91rem;
+  background: #3569FF;
+  color: #fff;
+  text-align: center;
+  line-height: .91rem;
+  position: absolute;
+  bottom: .57rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: .4rem;
+  font-size: 15px;
+}
+.line-box {
+  width: 1.31rem;
+  height: .52rem;
+  margin: 0 auto;
+  padding-top: .26rem;
+}
+.line-box .line {
+  float: left;
+  width: .51rem;
+  border: 1px solid #000000;
+}
+.line-box .dian {
+  float: left;
+  width: .05rem;
+  height: .05rem;
+  background: #000;
+  margin: 0 .12rem;
+}
